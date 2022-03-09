@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main {
+    background-image: url("https://cdn.pixabay.com/photo/2016/11/23/13/48/beach-1852945_960_720.jpg");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, .5);
+    border: 2px solid white;
+    width: 400px;
+    min-height: 200px;
+    padding: 10px;
+    text-align: center;
+    font-size: 26px;
+    margin-top: 100px;
+}
+
+.btn {
+    cursor: pointer;
+    margin: 15px;
+    padding: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 3px;
+    outline: none;
+}
+
+@media screen and (max-width: 420px){
+    .card {
+        max-width: 200px;
+        height: auto;
+        font-size: 23px;
+    }
+}
